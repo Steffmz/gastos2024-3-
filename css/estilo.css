@@ -1,0 +1,36 @@
+body{
+    background: rgb(32, 104, 22);
+}
+header{
+    margin: 30px 0;
+}
+
+.container{
+    padding:  20px;
+}
+.contenido-principal{
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 20px;
+}
+.presupuesto p{
+    margin-bottom: 0;
+    font-weight: bold;
+}
+.presupuesto p span{
+    font-weight: normal;
+}
+#gastos{
+    margin-bottom: 30px;
+}
+h1{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color: azure;
+font-weight: 100;
+}
+h2{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 22px;
+font-weight: 100;
+margin-bottom: 30px;
+}

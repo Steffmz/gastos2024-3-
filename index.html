@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>principal</title>
+    <script src="js/bootstrap.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <H1 class="text-center">control de gastos</H1>
+        </header>
+        <section class="contenido-principal">
+            <div class="row">
+             <div class="col">
+                <div class="contendo-gastos">
+                    <h2 class="text-center">Añade los gastos aqui</h2>
+                    <form id="agregar-gasto" action="#">
+                    <div class="form-group">
+                        <label for="nombre">Nombre del gasto:</label>
+                        <input type="text" class="form-control" id="gasto">
+                
+
+                    </div>
+                    <div class="form-group">
+                        <label for="cantidad"> valor:</label>
+                        <input type="number" class="form-control"  id="valor" placeholder="valor en $">
+
+
+                    </div>
+                    <button type="submit" class="btn btn-danger">agregar</button>
+                    </form>
+                </div>    
+
+            </div>
+
+        
+            <div class="col">
+                <div class="contenido-lista">
+                    <h2 class="text-center">LISTADO DE GASTOS</h2>
+                </div>
+                <div id="gastos">
+                    <ul class="list-group"></ul>
+                </div>
+                <div id="presupuesto" class="presupuesto">
+                    <div class="alert alert-warning">
+                        <p>presupuesto: $<span id="total"></span></p>
+
+                    </div>
+                    <div class="restante alert alert-primary">
+                        <p>restante: $<span id="restante"></span></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+</body>
+</html>
