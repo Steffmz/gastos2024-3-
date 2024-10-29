@@ -16,8 +16,8 @@
         <section class="contenido-principal">
             <div class="row">
                 <div class="col">
-                    <div class="contenidp-gastos">
-                        <h2 class="text-center">AÑADE LOS GASTOS AQUI</h2>
+                    <div class="contenido-gastos"> <!-- Corregido aquí -->
+                        <h2 class="text-center">AÑADE LOS GASTOS AQUÍ</h2>
                         <form id="agregar-gasto" action="#">
                             <div class="form-group">
                                 <label for="gasto">Gasto:</label>
@@ -28,29 +28,26 @@
                                 <input type="number" class="form-control" id="cantidad" placeholder="Valor en $" required>
                             </div>
                             <button type="submit" class="btn btn-danger">Agregar</button>
-                            
                         </form>
-                    </div><!--Contenido gastos-->
+                    </div><!--contenido gastos-->
                 </div><!--col-->
-                    <div class="col">
-                        <div class="contenido-lista">
-                            <h2 class="text-center">LISTADO DE GASTOS</h2>
-                            <div id="gastos">
-                                <ul class="list-group"></ul>
+                <div class="col">
+                    <div class="contenido-lista">
+                        <h2 class="text-center">LISTADO DE GASTOS</h2>
+                        <div id="gastos">
+                            <ul class="list-group"></ul>
+                        </div>
+                        <div id="presupuesto" class="presupuesto">
+                            <div class="alert alert-warning">
+                                <p>Presupuesto: $<span id="total"></span></p>
                             </div>
-                            <div id="presupuesto" class="presupuesto">
-                                <div class="alert alert-warning">
-                                    <p>Presupuesto: $<span id="total"></span></p>
-                                </div>
-                                <div class="restante alert alert-primary">
-                                    <p>Restante:$<span id="restante"></span></p>
-                                </div>
-
-                            </div><!--presupuesto-->
-                        </div><!--contenido de la lista-->
-                    </div><!--col-->
-                </div><!--row-->
-
+                            <div class="restante alert alert-primary">
+                                <p>Restante: $<span id="restante"></span></p>
+                            </div>
+                        </div><!--presupuesto-->
+                    </div><!--contenido de la lista-->
+                </div><!--col-->
+            </div><!--row-->
         </section>
     </div><!--contenedor-->
     <script src="js/gastos.js"></script>
